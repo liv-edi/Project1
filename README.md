@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+## Project 1
 
-You can use the [editor on GitHub](https://github.com/liv-edi/Project1/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+For this project we used the command line interface to create a number of folders that were listed in a tree like structure. We practiced using the ping command and the break keyboard sequence. We created and executed the JS files using Node.js and VSCode terminal run and debug.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Technologies used for this project include:
+- Node.js
+- VSCode
 
-### Markdown
+The purpose of the project was to gain experince accessing out operating system's CLI, working with CLI commands, wokring with VSCode, and writing and executing server side JS code.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+From this project I learned more about my CLI and how server side code works. I also learned how to create things using my CLI.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
+/*
+    CIT 281 Project 1
+    Name: Olivia Edwards
+*/
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+/*const d = new Date();*/
+/*let day = days[d.getDay()];*/
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+let day = days[new Date().getDay()];
+console.log(day);
+```
+```
+/*
+    CIT 281 Project 1
+    Name: Olivia Edwards
+*/
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/liv-edi/Project1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+// Returns a random number between min (inclusive) and max (exclusive)
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
-### Support or Contact
+const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+let result = "";
+
+let lengthOfOutputString = getRandomInteger(5, 26);
+
+for (let i = 0; i < lengthOfOutputString; i++) {
+    result += alphabet[getRandomInteger(0,alphabet.length)];
+}
+
+console.log(result);
+```
