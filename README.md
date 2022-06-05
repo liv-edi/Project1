@@ -1,5 +1,7 @@
 ## Project 1
 
+[Home](https://liv-edi.github.io/cit281/)
+
 For this project we used the command line interface to create a number of folders that were listed in a tree like structure. We practiced using the ping command and the break keyboard sequence. We created and executed the JS files using Node.js and VSCode terminal run and debug.
 
 Technologies used for this project include:
